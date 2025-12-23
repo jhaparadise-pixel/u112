@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>多链地址生成器（稳定版）</title>
+</head>
+<body>
+
+<h2>多链地址生成器（本地）</h2>
+<button id="generateBtn">生成地址</button>
+
+<p>助记词</p>
+<textarea id="mnemonic" rows="3" cols="60"></textarea>
+
+<p>ETH 地址</p>
+<input id="eth" style="width:420px">
+
+<p>私钥（ETH / TRON 通用）</p>
+<input id="privateKey" style="width:420px">
+
+<p>TRON 地址（同私钥）</p>
+<input id="tron" style="width:420px">
+
+<!-- ⚠️ 只用 ethers（Edge 100%不拦） -->
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
